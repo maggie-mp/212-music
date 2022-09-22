@@ -32,6 +32,32 @@
 
 	<p>hello world</p>
 
+
+          {% for music in music %}
+          <p>
+            Song: {{ music [0]}} <br>
+            Artist: {{ music [1]}} <br>
+            Genre: {{ music [2]}} <br>
+            Year: {{ music [3]}}  <br>
+            Beats per Minute: {{ music [4]}} <br>
+            Energy: {{ music [5]}} <br>
+            Danceability: {{ music [6]}} <br>
+            Loudness/dB: {{ music [7]}} <br>
+            Liveness: {{ music [8]}} <br>
+            Valence: {{ music [9]}} <br>
+            Length: {{ music [10]}} <br>
+            Acousticness: {{ music [11]}} <br>
+            Speechiness: {{ music [12]}} <br>
+            Popularity: {{ music [13]}} 
+          </p>
+          {% endfor %}
+
+
+
+  <div id="footer">
+      {{ disclaimer }}
+    </div>
+
   </body>
 
 </html>
