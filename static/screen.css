@@ -2,10 +2,11 @@
 
 /*Colour palette: 
 Smoky Black: #0C0F0A
-Pink Winter Sky: #FF206E;
-Lemon Glasier:  #FBFF12;
+Blue Shapphire: #005F73;
+Viridion Craan:  #0A9396;
 Turquiose: #41EAD4;
-snow white */
+snow white 
+Spotify Green (used in their logo): #1ed760 */
 
 body {
 	background-color: #0C0F0A;
@@ -13,42 +14,71 @@ body {
 	color: white;
 }
 
+/* website name*/
+
 h1 {
 	color: #1ed760;
 	text-align: center;
+	text-decoration: underline;
+}
+
+/*definitions*/
+#def {
+	max-width: 45%;
+	margin: auto;
+	padding: 0.2em 0em 1em 1em;
+	color: black;
+	background-color: #1ed760;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 h3 {
-	color: #FF206E;
+	text-decoration: underline;
 }
 
 ul {
 	list-style: none;
-	color: #FBFF12;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
 }
 
-.info {
-	border: 5px solid ghostwhite;
-	padding-left: 2em;
-	max-width: 400px;
-  min-width: 300px;
+
+/*song information*/
+#info {
+	background-color: ghostwhite;
+	width: fit-content;
+  border-radius: 5%;
+  padding: 1em;
+  float: left;
+  margin: 10px;
 }
 
 p {
-	color: #41EAD4;
+	color: black;
+}
+
+#info img {
+	max-width: 125px;
+	padding: 1em 1em 1em 0em;
+	float: left;
 }
 
 
+/*soundwave data*/
 #chart .bar {
-  width: 20px;
+  width: 8px;
   float: left;
-  margin-left: 0.5em;
+  margin: 0.1em;
+  background-color:#005F73;
 }
 
 
-
+/*footer*/
 #footer {
 	color: ghostwhite;
 	text-align: center;
 	padding: 1em;
+	margin-top: 40em;
 }

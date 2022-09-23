@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>212-Music</title>
+    <title>Spotify Top 10 in the 2010's</title>
     <meta name="description" content="Spotify Top 10 from 2010 - 2019" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
@@ -12,61 +12,66 @@
 
   <body>
 
-    <h1>Top 50 Spotify Songs from 2010 to 2019*</h1>
+    <h1>Top 50 Spotify Songs from 2010 to 2012:</h1>
 
- 
-      {% for music in music %}
+    <!--definition-->
 
-        
-    
-      <div id="chart">
-          <div class="bar" style="background-color:#FF206E; height: 200px;"></div>
+      <div id="def">
+           <h3>Definitions:</h3>
+          <ul>
+            <li> Title- The name of the song. </li>
+            <li> Artist- The artist/s of the song. </li>
+            <li> Genre- The musical style of the song. Includes geographical inspiration (eg. "detroit hip hop"). </li>
+            <li>Year- The year the songs were released in. </li>
+            <li>BPM (Beats per Minute)- The tempo of the song or how fast it is. </li>
+            <li>Energy- The energy of a song - the higher the value, the more energtic. </li>
+            <li>Dancibility- The higher the value, the easier it is to dance to this song. </li>
+            <li>Loudness/dB- The higher the value, the louder the song. </li>
+            <li>Liveness- The higher the value, the more likely the song is a live recording. </li>
+            <li>Valence- The higher the value, the more positive mood for the song. </li>
+            <li>Length- The duration of the song. </li>
+            <li>Acousticness- The higher the value the more acoustic the song is. </li>
+            <li>Speechiness- The higher the value the more spoken word the song contains. </li>
+            <li>Popularity- The higher the value the more popular the song is. </li>
+          </ul>
+
       </div>
 
-         <div class="info">
+ 
+      {% for music in music %}      
+    
+  <!-- bar data -->
+  
+     <div id="chart">
+          <div class="bar" style="height: 200px;"></div>
+      </div>
+
+        <!--<div id="info">
+          <img src ="{{ music [14]}}">
           <p>
             Song: {{ music [0]}} <br>
             Artist: {{ music [1]}} <br>
             Genre: {{ music [2]}} <br>
             Year: {{ music [3]}}  <br>
             Beats per Minute: {{ music [4]}} <br>
-            Popularity: {{ music [13]}} <br> <br>
-            Energy: {{ music [5]}} |
+            Popularity: {{ music [13]}} </p>
+            
+            <p> Energy: {{ music [5]}} |
             Danceability: {{ music [6]}} |
             Loudness/dB: {{ music [7]}} |
             Liveness: {{ music [8]}} <br>
             Valence: {{ music [9]}} |
             Length: {{ music [10]}} |
             Acousticness: {{ music [11]}} |
-            Speechiness: {{ music [12]}}            
-          </p>
+            Speechiness: {{ music [12]}} </p>
           </div>
-        <br>
-
-
-         
+        <br>-->
+      
           {% endfor %}
 
-          
-   <h3>Definitions:</h3>
-    <ul>
-      <li> Title- The name of the song. </li>
-      <li> Artist- The artist/s of the song. </li>
-      <li> Genre- The musical style of the song. Includes geographical inspiration (eg. "detroit hip hop"). </li>
-      <li>Year- The year the songs were released in. </li>
-      <li>BPM (Beats per Minute)- The tempo of the song or how fast it is. </li>
-      <li>Energy- The energy of a song - the higher the value, the more energtic. </li>
-      <li>Dancibility- The higher the value, the easier it is to dance to this song. </li>
-      <li>Loudness/dB- The higher the value, the louder the song. </li>
-      <li>Liveness- The higher the value, the more likely the song is a live recording. </li>
-      <li>Valence- The higher the value, the more positive mood for the song. </li>
-      <li>Length- The duration of the song. </li>
-      <li>Acousticness- The higher the value the more acoustic the song is. </li>
-      <li>Speechiness- The higher the value the more spoken word the song contains. </li>
-      <li>Popularity- The higher the value the more popular the song is. </li>
-    </ul>
 
-
+      
+  
 
   <div id="footer">
       {{ disclaimer }}

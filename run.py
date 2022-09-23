@@ -13,11 +13,11 @@ def index():
     print(db)
 
     music = []
-    cur = db.execute ('SELECT * from [top50] limit 2')
+    cur = db.execute ('SELECT * from [top50] limit 150')
     for row in cur:
         music.append(list(row))
     db.close()
 
     return render_template('index.html', 
-        disclaimer='Designed and Coded by Maggie McMillan-Perry, 2022.',
+        disclaimer='Designed and Coded by Maggie McMillan-Perry, 2022 | Not sponsored by Spotify.',
         music=music)
