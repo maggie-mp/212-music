@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Colour palette: 
+Smoky Black: #0C0F0A
+Pink Winter Sky: #FF206E;
+Lemon Glasier:  #FBFF12;
+Turquiose: #41EAD4;
+snow white */
+
+body {
+	background-color: #0C0F0A;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+h1 {
+	color: #1ed760;
+}
+
+h3 {
+	color: #FF206E;
+}
+
+ul {
+	list-style: none;
+	color: #FBFF12;
+}
+
+.info {
+	border: 5px solid ghostwhite;
+	padding: 1em;
+	width: fit-content;
+}
+
 p {
-	color: blue;
+	color: #41EAD4;
+}
+
+#footer {
+	color: ghostwhite;
+	text-align: center;
+	padding: 1em;
 }
