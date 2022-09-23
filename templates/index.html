@@ -13,9 +13,17 @@
   <body>
 
     <h1>Top 50 Spotify Songs from 2010 to 2019*</h1>
+
  
-          {% for music in music %}
-          <div class="info">
+      {% for music in music %}
+
+        
+    
+      <div id="chart">
+          <div class="bar" style="background-color:#FF206E; height: 200px;"></div>
+      </div>
+
+         <div class="info">
           <p>
             Song: {{ music [0]}} <br>
             Artist: {{ music [1]}} <br>
@@ -33,13 +41,13 @@
             Speechiness: {{ music [12]}}            
           </p>
           </div>
-          <br>
+        <br>
+
+
+         
           {% endfor %}
 
-
-
-      
-
+          
    <h3>Definitions:</h3>
     <ul>
       <li> Title- The name of the song. </li>
@@ -59,9 +67,17 @@
     </ul>
 
 
+
   <div id="footer">
       {{ disclaimer }}
     </div>
+
+
+    <script>
+      console.log('Hello World');
+    </script>
+    
+    <script src="{{ url_for('static', filename='js.js') }}"></script>
 
   </body>
 
