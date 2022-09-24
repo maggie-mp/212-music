@@ -16,7 +16,7 @@
 
     <!--definition-->
 
-      <div id="def">
+      <!--<div id="def">
            <h3>Definitions:</h3>
           <ul>
             <li> Title- The name of the song. </li>
@@ -35,19 +35,20 @@
             <li>Popularity- The higher the value the more popular the song is. </li>
           </ul>
 
-      </div>
+      </div>-->
 
  
-      {% for music in music %}      
     
-  <!-- bar data -->
-  
-     <div id="chart">
+
+      {% for music in music %}      
+     <div id="chart" onmouseover="showSix();" onmouseout="showSix()">
           <div class="bar" style="height: 200px;"></div>
       </div>
+  
+  <!-- bar data -->
 
-        <!--<div id="info">
-          <img src ="{{ music [14]}}">
+      <div id="info" style="visibility:hidden;">
+          <!--<img src ="{{ music [14]}}">-->
           <p>
             Song: {{ music [0]}} <br>
             Artist: {{ music [1]}} <br>
@@ -65,12 +66,8 @@
             Acousticness: {{ music [11]}} |
             Speechiness: {{ music [12]}} </p>
           </div>
-        <br>-->
-      
-          {% endfor %}
-
-
-      
+            {% endfor %}
+        <br>
   
 
   <div id="footer">

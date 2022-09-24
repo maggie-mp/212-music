@@ -13,7 +13,7 @@ def index():
     print(db)
 
     music = []
-    cur = db.execute ('SELECT * from [top50] limit 150')
+    cur = db.execute ('SELECT * from [top50] limit 10')
     for row in cur:
         music.append(list(row))
     db.close()
