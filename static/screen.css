@@ -53,6 +53,7 @@ ul {
   padding: 1em;
   float: left;
   margin: 10px;
+  position: absolute;
 }
 
 p {
