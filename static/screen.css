@@ -71,8 +71,9 @@ p {
 #chart .bar {
   width: 8px;
   float: left;
-  margin: 0.1em;
+  margin: 1px;
   background-color:#005F73;
+
 }
 
 

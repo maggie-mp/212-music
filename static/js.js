@@ -12,7 +12,9 @@ function showSix() {
             if(element.style.visibility == "hidden"){
                 //element.style.display = "block";
                 element.style.visibility = "visible";
-            } else {
+            } 
+
+            else {
                 //element.style.display = "none";
                 element.style.visibility = "hidden";
             }   
